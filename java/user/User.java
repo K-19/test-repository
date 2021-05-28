@@ -74,6 +74,10 @@ public class User {
         return getAgeUsersBySex(sex) / getHowManyUsersBySex(sex);
     }
 
+    public boolean isAdult() {
+        return age >= 18;
+    }
+
     public String getName() {
         return name;
     }
