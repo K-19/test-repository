@@ -101,11 +101,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", sex=" + sex +
-                '}';
+        return name + ", " + age + (age % 10 == 1 && age != 11 ? " год" : " лет") + ", " + (sex == Sex.MALE ? " мальчик" : " девочка");
     }
 }
