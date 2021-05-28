@@ -86,6 +86,18 @@ public class User {
         return sex;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
